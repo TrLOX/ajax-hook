@@ -16,6 +16,7 @@ ah.proxy({
                 rURI = response.response.match(/\\"(.*)\\"/)
                 if(rURI) {
                     document.title = 'status:'+rURI[1];
+                    handler.next('OK')
                 }
             }
 
